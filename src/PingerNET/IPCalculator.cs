@@ -1,11 +1,10 @@
-﻿using System;
-using System.Net;
+﻿using System.Net;
 
 namespace SynthesisCode.PingerNET;
 
-public class SubnetCalculator
+public class IPCalculator
 {
-    public static IPAddress GetNetworkAddress(IPAddress address, IPAddress subnetMask)
+    public IPAddress GetNetworkAddress(IPAddress address, IPAddress subnetMask)
     {
         byte[] ipAdressBytes = address.GetAddressBytes();
         byte[] subnetMaskBytes = subnetMask.GetAddressBytes();
