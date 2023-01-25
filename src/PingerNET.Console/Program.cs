@@ -5,7 +5,7 @@ using SynthesisCode.PingerNET;
 using System.Net;
 
 //TEST for calculator
-IPCalculator IPCalc = new IPCalculator();
+IPCalculator IPCalc = new();
 Console.WriteLine(IPCalc.GetNetworkAddress(IPAddress.Parse("192.168.1.15"), IPAddress.Parse("255.255.255.0")));
 
 //TEST for pinger
